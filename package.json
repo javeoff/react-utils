@@ -1,6 +1,6 @@
 {
   "name": "react-utils-jave",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -21,9 +21,6 @@
     "url": "https://github.com/javeoff/react-utils/issues"
   },
   "homepage": "https://github.com/javeoff/react-utils#readme",
-  "dependencies": {
-    "react": "^18.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-react": "^7.18.6",
@@ -35,7 +32,8 @@
     "@types/react": "^18.0.24",
     "rollup": "^3.2.5",
     "rollup-plugin-typescript2": "^0.34.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "react": "^18.0.0"
   },
   "peerDependencies": {
     "react": "^16.8.0  || ^17.0.0 || ^18.0.0"
