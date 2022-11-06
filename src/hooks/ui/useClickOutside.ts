@@ -17,8 +17,6 @@ export const useClickOutside = (
         return;
       }
 
-      console.log(!!ref.current.contains((event as TListenerEvent).target));
-
       if (
         protectedCallbackRef.current &&
         !ref.current.contains((event as TListenerEvent).target)

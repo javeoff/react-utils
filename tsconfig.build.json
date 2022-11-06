@@ -8,6 +8,8 @@
     "dist",
     "tests",
     "jest.config.ts",
-    "jest.config.*.ts"
+    "jest.config.*.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }

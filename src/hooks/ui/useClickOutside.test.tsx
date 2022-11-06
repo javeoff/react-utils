@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React, { ReactElement, useRef } from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { useClickOutside } from '../src';
+import { useClickOutside } from '../../index';
 
 const App = ({ handler }: { handler: VoidFunction }): ReactElement => {
   const ref = useRef<HTMLDivElement>(null);

@@ -5,6 +5,6 @@ export const baseJestConfig: Config.InitialOptions = {
   'clearMocks': true,
   'coverageDirectory': 'coverage',
   'testMatch': [
-    '<rootDir>/tests/**/*.test.(ts|tsx)'
+    '<rootDir>/src/**/*.test.(ts|tsx)'
   ]
 }

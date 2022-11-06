@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import { useSetState } from '../src';
+import { useSetState } from '../../index';
 
 const initializeHook = (initialState: Record<string, unknown> = {}) => {
   return renderHook(() => {
