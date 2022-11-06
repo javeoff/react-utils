@@ -17,20 +17,22 @@ export const useClickOutside = (
         return;
       }
 
+      console.log(!!ref.current.contains((event as TListenerEvent).target));
+
       if (
         protectedCallbackRef.current &&
-        ref.current.contains((event as TListenerEvent).target)
+        !ref.current.contains((event as TListenerEvent).target)
       ) {
         protectedCallbackRef.current(event);
       }
-
-      document.addEventListener('click', onClick);
-      document.addEventListener('touchstart', onClick as unknown as Dispatch<TouchEvent>);
-
-      return () => {
-        document.removeEventListener('click', onClick);
-        document.removeEventListener('touchstart', onClick as unknown as Dispatch<TouchEvent>);
-      };
     }
-  })
+
+    document.addEventListener('click', onClick);
+    document.addEventListener('touchstart', onClick as unknown as Dispatch<TouchEvent>);
+
+    return () => {
+      document.removeEventListener('click', onClick);
+      document.removeEventListener('touchstart', onClick as unknown as Dispatch<TouchEvent>);
+    };
+  }, [callback])
 }

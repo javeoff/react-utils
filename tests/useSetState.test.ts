@@ -46,6 +46,16 @@ describe('useSetState', () => {
     expect(state).toEqual({ x: 3 })
   })
 
+  test('should merge state', () => {
+    const { state, setState } = useHook({
+      x: 2,
+    })
+
+    act(() => setState({ x: 3, y: 1 }))
+
+    expect(state).toEqual({ x: 3, y: 1 })
+  })
+
   test('should expand state', () => {
     const { state, setState } = useHook({
       x: 2,
