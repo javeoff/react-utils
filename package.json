@@ -1,8 +1,9 @@
 {
   "name": "react-utils-jave",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
+  "sideEffects": false,
   "scripts": {
     "test": "jest --maxWorkers 2",
     "test:ssr": "jest --maxWorkers 2 --config ./jest.config.node.ts",

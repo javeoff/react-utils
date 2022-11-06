@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import React, { ReactElement, useRef } from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { useClickOutside } from '../../index';
@@ -30,6 +30,14 @@ describe('useClickOutside', () => {
     const { getByText } = render(<App handler={handler} />);
 
     getByText('parent').click();
+    expect(handler).toBeCalled();
+  });
+
+  test('should handle touch outside', () => {
+    const handler = jest.fn();
+    const { getByText } = render(<App handler={handler} />);
+
+    fireEvent.touchStart(getByText('parent'));
     expect(handler).toBeCalled();
   });
 
