@@ -78,6 +78,6 @@ describe('useSetState', () => {
     rerender()
     const { setState: setStateAfter } = result.current;
 
-    expect(setStateBefore).toEqual(setStateBefore)
+    expect(setStateBefore).toBe(setStateAfter)
   })
 })

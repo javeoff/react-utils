@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction, useCallback, useState } from 'react';
 
 type TUnknownState = Record<string ,unknown>;
 type TResult = [TUnknownState, Dispatch<SetStateAction<TUnknownState>>];
@@ -25,7 +25,7 @@ export function useSetState<
     Object.assign({}, initialState)
   );
 
-  const updateState = (partialState:
+  const updateState = useCallback((partialState:
     Partial<TUnknownState> |
     ((state: TUnknownState) => TUnknownState)
   ) => {
@@ -40,7 +40,7 @@ export function useSetState<
     const stateConsumer = partialState;
 
     return stateConsumer(state)
-  }
+  }, [])
 
   return [state, updateState];
 }
