@@ -7,6 +7,11 @@ interface ICallbackResult {
   onRemount(): void;
 }
 
+/**
+ * useMount with side effects
+ * @param callback
+ * @param deps
+ */
 export const useMountEffect = (
   callback: () => Partial<ICallbackResult> | undefined,
   deps: DependencyList,

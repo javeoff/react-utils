@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
 type TUnknownState = Record<string ,unknown>;
+type TResult = [TUnknownState, Dispatch<SetStateAction<TUnknownState>>];
 
 /**
  * @example
@@ -19,7 +20,7 @@ type TUnknownState = Record<string ,unknown>;
  */
 export function useSetState<
   InitialState extends TUnknownState = TUnknownState
->(initialState: InitialState) {
+>(initialState: InitialState): TResult {
   const [state, setState] = useState<TUnknownState>(
     Object.assign({}, initialState)
   );

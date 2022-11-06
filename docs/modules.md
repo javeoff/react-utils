@@ -1,6 +1,6 @@
-[react-utils-jave](README.md) / Exports
+[Port Typedoc](README.md) / Exports
 
-# react-utils-jave
+# Port Typedoc
 
 ## Table of contents
 
@@ -49,7 +49,7 @@ Provide asynchronous callback to useEffect
 
 #### Defined in
 
-[hooks/sideEffects/useAsync.ts:12](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useAsync.ts#L12)
+[hooks/sideEffects/useAsync.ts:12](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useAsync.ts#L12)
 
 ___
 
@@ -88,7 +88,7 @@ const [state, setState] = useAwait(async () => {
 
 #### Defined in
 
-[hooks/sideEffects/useAwait.ts:24](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useAwait.ts#L24)
+[hooks/sideEffects/useAwait.ts:24](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useAwait.ts#L24)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[hooks/ui/useClickOutside.ts:8](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/ui/useClickOutside.ts#L8)
+[hooks/ui/useClickOutside.ts:8](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/ui/useClickOutside.ts#L8)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[hooks/sideEffects/useDebounce.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useDebounce.ts#L1)
+[hooks/sideEffects/useDebounce.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useDebounce.ts#L1)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[hooks/lifecycles/useIsFirstMount.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/lifecycles/useIsFirstMount.ts#L1)
+[hooks/lifecycles/useIsFirstMount.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/lifecycles/useIsFirstMount.ts#L1)
 
 ___
 
@@ -167,7 +167,7 @@ Provide asynchronous callback to useEffect
 
 #### Defined in
 
-[hooks/sideEffects/useLayoutAsync.ts:12](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useLayoutAsync.ts#L12)
+[hooks/sideEffects/useLayoutAsync.ts:12](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useLayoutAsync.ts#L12)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[hooks/lifecycles/useMount.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/lifecycles/useMount.ts#L1)
+[hooks/lifecycles/useMount.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/lifecycles/useMount.ts#L1)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[hooks/lifecycles/useMountEffect.ts:10](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/lifecycles/useMountEffect.ts#L10)
+[hooks/lifecycles/useMountEffect.ts:10](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/lifecycles/useMountEffect.ts#L10)
 
 ___
 
@@ -240,7 +240,7 @@ const ref = useProtectedRef(() => {
 
 #### Defined in
 
-[hooks/sideEffects/useProtectedRef.ts:14](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useProtectedRef.ts#L14)
+[hooks/sideEffects/useProtectedRef.ts:14](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useProtectedRef.ts#L14)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[hooks/lifecycles/useRemount.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/lifecycles/useRemount.ts#L1)
+[hooks/lifecycles/useRemount.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/lifecycles/useRemount.ts#L1)
 
 ___
 
@@ -293,7 +293,7 @@ setState({
 
 #### Defined in
 
-[hooks/state/useSetState.ts:20](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/state/useSetState.ts#L20)
+[hooks/state/useSetState.ts:20](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/state/useSetState.ts#L20)
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-[hooks/sideEffects/useThrottle.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useThrottle.ts#L1)
+[hooks/sideEffects/useThrottle.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useThrottle.ts#L1)
 
 ___
 
@@ -321,7 +321,7 @@ ___
 
 #### Defined in
 
-[hooks/lifecycles/useUnmount.ts:1](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/lifecycles/useUnmount.ts#L1)
+[hooks/lifecycles/useUnmount.ts:1](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/lifecycles/useUnmount.ts#L1)
 
 ___
 
@@ -341,4 +341,4 @@ ___
 
 #### Defined in
 
-[hooks/sideEffects/useUpdate.ts:5](https://github.com/javeoff/react-utils/blob/d018b0d/src/hooks/sideEffects/useUpdate.ts#L5)
+[hooks/sideEffects/useUpdate.ts:5](https://github.com/javeoff/react-utils/blob/ce6d2b3/src/hooks/sideEffects/useUpdate.ts#L5)
