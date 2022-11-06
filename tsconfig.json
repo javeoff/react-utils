@@ -2,9 +2,8 @@
   "compilerOptions": {
     "target": "es5",
     "outDir": "dist",
-    "rootDir": "src",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "ESNext",
+    "module": "esnext",
     "jsx": "react-jsx",
     "declaration": true,
     "strict": true,
@@ -18,11 +17,12 @@
     "noImplicitOverride": true,
     "isolatedModules": false,
     "composite": true,
-    "sourceMap": false
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "importHelpers": true
   },
   "exclude": [
     "node_modules",
     "dist",
-    "tests",
   ]
 }

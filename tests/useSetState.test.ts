@@ -1,5 +1,5 @@
-import { useSetState } from '../src/hooks/state/useSetState';
 import { renderHook } from '@testing-library/react-hooks';
+import { useSetState } from '../src';
 
 test('Empty object hook', () => {
   const { result } = renderHook(() => {
@@ -15,5 +15,8 @@ test('Empty object hook', () => {
     state, setState
   } = result.current;
 
-  expect(state).toBe('object');
+  type TState = Record<string, unknown>;
+
+  expect(typeof state).toBe('object');
+  expect(Object.values(state as TState).length).toBe(0);
 })

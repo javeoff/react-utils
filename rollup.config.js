@@ -4,7 +4,7 @@ const typescript = require('rollup-plugin-typescript2');
 module.exports = () => {
   const plugins = [
     typescript({
-      tsconfig: 'tsconfig.json',
+      tsconfig: 'tsconfig.build.json',
     }),
     babel({
       exclude: /node_modules/,
