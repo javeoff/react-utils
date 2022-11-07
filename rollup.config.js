@@ -7,20 +7,19 @@ module.exports = () => {
       tsconfig: 'tsconfig.build.json',
     }),
     babel({
-      exclude: /node_modules/,
       extensions: ['.js', '.ts', '.tsx'],
-      exclude: ['src/tests/*.test.ts'],
+      exclude: ['node_modules','src/tests/*.test.ts'],
     }),
   ];
 
   return {
     input: 'src/index.ts',
     output: {
-      format: 'cjs',
+      format: 'esm',
       dir: 'dist',
       preserveModules: true,
     },
     plugins,
-    external: ['react/jsx-runtime'],
+    external: ['react'],
   };
 };
