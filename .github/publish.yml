@@ -1,0 +1,33 @@
+name: Publish
+
+on:
+  release:
+    types: [ created ]
+
+jobs:
+  build-workflow:
+    uses: ./.github/workflows/build.yml
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: [ build-workflow ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup
+        uses: actions/setup-node@v3
+        with:
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Build
+        run: npm run build:lib
+
+      - name: Publish
+        run: npm publish --workspaces
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
