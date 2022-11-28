@@ -5,9 +5,6 @@ on:
     types: [ created ]
 
 jobs:
-  build-workflow:
-    uses: ./.github/workflows/build.yml
-
   publish:
     runs-on: ubuntu-latest
 
